@@ -1,5 +1,6 @@
 var map;
       function initMap() {
+        var img = "../udb_logo.png";
         var UDBS = {lat: 13.715914, lng: -89.153709};
         var UDBSS = {lat: 13.67401, lng: -89.236772};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -8,10 +9,12 @@ var map;
         });
         var marker = new google.maps.Marker({
           position: UDBS,
-          map: map
+          map: map,
+          icon: img
         });
         var marker = new google.maps.Marker({
           position: UDBSS,
-          map: map
+          map: map,
+          icon: img
         });
       }s
